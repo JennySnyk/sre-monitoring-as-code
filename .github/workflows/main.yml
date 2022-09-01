@@ -1,8 +1,6 @@
 name: 'Security Scan'
 
-on:
-  pull_request:
-    types: [ labeled, opened, reopened, synchronize ]
+on: [push,pull_request]
 
 env:
   REGISTRY: ghcr.io
