@@ -71,7 +71,7 @@ jobs:
           image: ${{ steps.meta.outputs.tags }}
           args: |
             --app-vulns
-            --sarif-file-output=snyk.sarif
+            --sarif-file-output=snyk.sarif 
 
       - name: Upload result to GitHub Code Scanning
         uses: github/codeql-action/upload-sarif@v2
